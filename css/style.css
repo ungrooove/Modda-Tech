@@ -1,0 +1,537 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto";
+    box-sizing: border-box;
+}
+
+body{
+    background-color:#202124;
+    color: white;
+    z-index: 10;
+}
+
+/*---NAV---*/
+
+header .navbar{
+    display: none;
+}
+.navbar-nav {
+    align-items: center;
+    font-size: 20px;
+}
+
+header .desk-nav{
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+header nav ul div{
+    margin: 10px 30px;
+    display: flex;
+    list-style: none;
+    z-index: 10;
+}
+
+.logo{
+    width: 150px;
+    z-index: 10;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    width: 100vw;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: #fafafa;
+    transition: color .5s;
+    z-index: 10;
+}
+
+.nav-link:hover{
+    color: #797979;
+}
+
+/*---HERO---*/
+
+header video{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    z-index: 5;
+}
+.background-video{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+header .hero{
+    position: absolute;
+    top: 15%;
+    z-index: 6;
+    height: 80vh;
+    margin-left: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+
+}
+header .hero h1{
+    width: 60%;
+    text-wrap: balance;
+    font-size: 6rem;
+    font-weight: 600;
+}
+
+header .hero h2{
+    margin-top: 20px;
+    width: 60%;
+    text-wrap: balance;
+    font-style: italic;
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 2rem;
+    color: #dbdbdb;
+}
+
+/*---INFO---*/
+
+.info{
+    position: relative;
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.info .text-info{
+    width: 50vw;
+    display: flex;
+    align-items: center;
+}
+
+.info .text-info div h2{
+    color: white;
+    font-size: 4.5rem;
+}
+.info .text-info div p{
+    color: rgb(179, 179, 179);
+    font-size: 1rem;
+    text-wrap: balance;
+}
+
+.info .stats{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-color: #0071fb0c;
+    color: #99c1d7;
+    border-radius: 50px;
+    margin: 0 30px;
+}
+
+.info .stats div{
+    padding: 30px;
+    margin: 30px;
+}
+
+.info .stats div h2{
+    font-size: 2.5rem;
+}
+
+.info .stats div p{
+    font-size: 1rem;
+}
+
+
+
+
+/*---CARDS---*/
+
+.cards-title{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.cards-title h2{
+    font-size: 4rem;
+    width: 90%;
+    border-bottom: 2px solid rgb(134, 134, 134);
+    text-align: center;
+    line-height: 70px;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: first baseline;
+    height: 80vh;
+}
+
+section .card-cont{
+    margin: 20px;
+}
+
+section .card-cont a{
+    text-decoration: none;
+}
+
+section .card-cont .card{
+    width: 400px;
+    height: 450px;
+    padding: 20px;
+    border: 1px solid rgb(255, 0, 136);
+    background-color: transparent;
+    color: white;
+    transition: background-color 1s, color 1s, box-shadow .5s;
+    cursor: pointer;
+}
+
+section .card-cont .card:hover{
+    background-color: rgb(255, 0, 136);
+    box-shadow: 0 0 150px -40px rgb(255, 0, 136);
+    color: black;
+}
+
+section .card-cont .alt{
+    border: 1px solid rgb(0, 187, 255);
+    transition: background-color 1s, color 1s, box-shadow .5s;
+}
+
+section .card-cont .alt:hover{
+    background-color: rgb(0, 187, 255);
+    box-shadow: 0 0 150px -40px rgb(0, 187, 255);
+}
+
+section .card-cont .sap{
+    border: 1px solid rgb(255, 140, 0);
+    transition: background-color 1s, color 1s, box-shadow .5s;
+}
+
+section .card-cont .sap:hover{
+    background-color: rgb(255, 140, 0);
+    box-shadow: 0 0 150px -40px rgb(255, 140, 0);
+}
+
+section .card-cont .card h2{
+    font-size: 2.5rem;
+    padding: 20px 0;
+    font-family: "Poppins";
+}
+
+
+
+
+/*---FOOTER---*/
+
+.footer-cont{
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(to top, rgba(83, 83, 83, 0.229), transparent);
+    border-top: 1px solid rgba(255, 255, 255, 0.193);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.wsp-top{
+    display: flex;
+    padding: 0 40px 40px 40px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 10;
+}
+
+.wsp-top a .bi-whatsapp{
+    color: rgb(82, 215, 82);
+    transition: color .3s;
+}
+.wsp-top a .bi-whatsapp:hover{
+    color: rgb(46, 126, 46);
+}
+
+.contacto{
+    display: flex;
+    flex-direction: column;
+}
+
+.contacto h3{
+    color: rgb(190, 190, 190);
+    border-bottom: 1px solid rgb(107, 107, 107) ;
+    line-height: 50px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.contacto a{
+    text-decoration: none;
+    color: white;
+    margin: 10px 0;
+    text-align: center;
+    transition: color .5s;
+    z-index: 10;
+}
+
+.contacto a:hover{
+    color: rgb(153, 153, 153);
+}
+
+.footer-text{
+    position: absolute;
+    bottom: 0;
+    font-size: .8rem;
+    font-style: italic;
+}
+
+/*---MEDIA QUERYS---*/
+
+@media screen and (max-width: 1350px){
+    section .card-cont .card{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1260px){
+    header .hero h1{
+        width: 70%;
+        font-size: 5rem;
+    }
+    
+    header .hero h2{
+        width: 70%;
+    }
+    
+    .info .text-info{
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        margin: 0 30px;
+    }
+}
+
+@media screen and (max-width: 950px){
+
+    .cards{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+    .card-cont{
+        width: 50%;
+    }
+
+    section .card-cont .card{
+        animation: movement 5s infinite ;
+    }
+    @keyframes movement {
+        0%   {
+            background-color: rgb(255, 0, 136);
+            box-shadow: 0 0 150px -40px rgb(255, 0, 136);
+            color: black;
+        }
+        25%  {
+            background-color: rgb(255, 0, 136);
+            box-shadow: 0 0 150px -40px rgba(255, 0, 136, 0.372);
+            color: black;
+        }
+        50%  {
+            background-color: rgba(255, 0, 136, 0);
+            box-shadow: 0 0 150px -40px rgba(255, 0, 136, 0.318);
+            color: white;
+        }
+        100% {
+            background-color: rgb(255, 0, 136);
+            box-shadow: 0 0 150px -40px rgb(255, 0, 136);
+            color: black;
+        }
+    }
+    section .card-cont .alt{
+        animation: altmov 5s infinite ;
+    }
+    @keyframes altmov {
+        0%   {
+            background-color: rgb(0, 187, 255);
+            box-shadow: 0 0 150px -40px rgb(0, 187, 255);
+            color: black;
+        }
+        25%  {
+            background-color: rgb(0, 187, 255);
+            box-shadow: 0 0 150px -40px rgb(0, 187, 255);
+            color: black;
+        }
+        50%  {
+            background-color: rgba(0, 187, 255, 0);
+            box-shadow: 0 0 150px -40px rgba(0, 187, 255, 0.229) ;
+            color: rgb(255, 255, 255);
+        }
+        100% {
+            background-color: rgb(0, 187, 255);
+            box-shadow: 0 0 150px -40px rgb(0, 187, 255);
+            color: black;
+        }
+    }
+
+    section .card-cont .sap{
+        animation: sapmov 5s infinite ;
+    }
+    @keyframes sapmov {
+        0%   {
+            background-color: rgb(255, 140, 0);
+            box-shadow: 0 0 150px -40px rgb(255, 140, 0);
+            color: black;
+        }
+        25%  {
+            background-color: rgb(255, 140, 0);
+            box-shadow: 0 0 150px -40px rgb(255, 140, 0);
+            color: black;
+        }
+        50%  {
+            background-color: rgba(255, 140, 0, 0);
+            box-shadow: 0 0 150px -40px rgba(255, 140, 0, 0.31);
+            color: rgb(255, 255, 255);
+        }
+        100% {
+            background-color: rgb(255, 140, 0);
+            box-shadow: 0 0 150px -40px rgb(255, 140, 0);
+            color: black;
+        }
+    }
+
+    .info{
+        flex-direction: column;
+        text-align: center;
+        margin: 100px 0;
+    }
+
+    .info .text-info{
+        width: 90vw;
+        display: flex;
+        align-items: center;
+        margin: 50px;
+    }
+
+    .info .stats{
+        margin: 0 30px 50px 30px;
+        width: 90%;
+        border-radius: 0;
+        justify-content: center;
+    }
+    
+}
+
+@media screen and (max-width: 880px){
+    header .hero h1{
+        width: 80%;
+        font-size: 5rem;
+    }
+    header .hero h2{
+        width: 80%;
+        font-size: 1.5rem;
+    }
+    
+    
+}
+
+@media screen and (max-width: 680px){
+    .info .text-info div h2{
+        font-size: 4rem;
+    }
+    .info .text-info div p{
+        font-size: 1rem;
+    }
+
+    .info .stats div h2{
+        font-size: 2rem;
+    }
+    
+    .info .stats div p{
+        font-size: .8rem;
+    }
+}
+
+@media screen and (max-width: 650px){
+    header .navbar{
+        display: flex;
+    }
+    header .nav{
+        display: none;
+    }
+    
+    .card-cont{
+        width: 70%;
+    }
+    header .hero h1{
+        width: 80%;
+        font-size: 4rem;
+    }
+    header .hero h2{
+        width: 80%;
+        font-size: 1.5rem;
+    }
+    .info .text-info div h2{
+        font-size: 3rem;
+    }
+    .info .text-info div p{
+        font-size: .8rem;
+    }
+}
+
+@media screen and (max-width: 510px){
+    header .hero h1{
+        width: 90%;
+    }
+    header .hero h2{
+        width: 90%;
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+}
+
+@media screen and (max-width: 463px){
+    header .hero h1{
+        font-size: 3.3rem;
+    }
+    header .hero h2{
+        width: 80%;
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+}
+
+@media screen and (max-width: 410px){
+
+    .card-cont{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 380px){
+    header .hero h1{
+        width: 90%;
+        font-size: 3rem;
+    }
+    header .hero h2{
+        font-size: 1rem;
+    }
+}
