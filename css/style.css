@@ -189,7 +189,7 @@ section .card-cont{
     margin: 20px;
 }
 
-section .card-cont a{
+section .card-cont .link-sap{
     text-decoration: none;
 }
 
