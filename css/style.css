@@ -189,6 +189,10 @@ section .card-cont{
     margin: 20px;
 }
 
+section .card-cont a{
+    text-decoration: none;
+}
+
 section .card-cont .card{
     width: 400px;
     height: 450px;
