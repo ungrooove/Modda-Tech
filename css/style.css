@@ -9,10 +9,6 @@
     box-sizing: border-box;
 }
 
-a{
-    text-decoration: none;
-    color: inherit;
-}
 body{
     background-color:#202124;
     color: white;
@@ -118,14 +114,19 @@ header .hero h2{
 .info{
     position: relative;
     width: 100vw;
-    height: 80vh;
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: center;
+}
+
+.info div img{
+    width: 500px;
+}
+
+.info div{
+    width: 100%;
 }
 
 .info .text-info{
-    width: 50vw;
     display: flex;
     align-items: center;
 }
@@ -140,31 +141,10 @@ header .hero h2{
     text-wrap: balance;
 }
 
-.info .stats{
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    background-color: #0071fb0c;
-    color: #99c1d7;
-    border-radius: 50px;
-    margin: 0 30px;
+a{
+    text-decoration: none;
+    color: inherit;
 }
-
-.info .stats div{
-    padding: 30px;
-    margin: 30px;
-}
-
-.info .stats div h2{
-    font-size: 2.5rem;
-}
-
-.info .stats div p{
-    font-size: 1rem;
-}
-
-
-
 
 /*---CARDS---*/
 
@@ -194,8 +174,8 @@ section .card-cont{
 }
 
 section .card-cont .card{
-    width: 400px;
-    height: 450px;
+    width: 450px;
+    height: 500px;
     padding: 20px;
     border: 1px solid rgb(255, 0, 136);
     background-color: transparent;
