@@ -189,7 +189,7 @@ section .card-cont{
     margin: 20px;
 }
 
-section .card-cont a{
+.cards .card-cont a{
     text-decoration: none;
 }
 
