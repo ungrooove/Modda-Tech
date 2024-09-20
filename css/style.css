@@ -7,6 +7,7 @@
     padding: 0;
     font-family: "Roboto";
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 body{
@@ -187,10 +188,6 @@ header .hero h2{
 
 section .card-cont{
     margin: 20px;
-}
-
-a{
-    text-decoration: dotted;
 }
 
 section .card-cont .card{
