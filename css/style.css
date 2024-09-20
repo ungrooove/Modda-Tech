@@ -190,7 +190,7 @@ section .card-cont{
 }
 
 a{
-    text-decoration: none;
+    text-decoration: dotted;
 }
 
 section .card-cont .card{
