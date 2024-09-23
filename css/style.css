@@ -248,8 +248,6 @@ section .card-cont .card{
 section .card-cont .card span{
     font-style: italic;
     font-size: .8rem;
-    position: absolute;
-    bottom: 40px;
 }
 
 section .card-cont .card:hover{
