@@ -349,6 +349,10 @@ section .card-cont .card h2{
     font-style: italic;
 }
 
+.img-desc{
+    display: none;
+}
+
 /*---MEDIA QUERYS---*/
 
 @media screen and (max-width: 1463px){
